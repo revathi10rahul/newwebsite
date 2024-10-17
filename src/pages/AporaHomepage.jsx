@@ -69,6 +69,7 @@ const data = {
   const toggleHeaders = () => {
     setIsOpen(!isOpen); // Toggle the open/close state
   };
+<<<<<<< HEAD
 
   return (
     <div className='AporaHomepage'>
@@ -81,6 +82,13 @@ const data = {
        <h1 className='headingStyle'>APORA </h1>
      
             <div >
+=======
+  return (
+    <div>
+       <h1 className='headingStyle mt-5' >Apora</h1>
+       <Container>
+            <div>
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
                 {/* Main Headers */}
                 <ul className="responsive-list">
         {Object.keys(data).map((header) => (
@@ -96,14 +104,22 @@ const data = {
             </div>
 
             {/* List of Items based on Selected Header */}
+<<<<<<< HEAD
             <div className='backgroundimg-deconsolidation'>
             <Container  >
+=======
+            <Container fluid>
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
                 <Row>
                     
                     <Col lg={6}>
                         {selectedHeader && (
                             <div>
+<<<<<<< HEAD
                                 <ul className="block-list mt-2">
+=======
+                                <ul className="block-list mt-5">
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
                                     {items.map((item) => (
                                         <li
                                             key={item.name}
@@ -117,6 +133,7 @@ const data = {
                             </div>
                         )}
                     </Col>
+<<<<<<< HEAD
                     <Col lg={6} >
             {selectedItem && (
                 <div>
@@ -142,6 +159,26 @@ const data = {
                 </Row>  
             </Container>
             </div>
+=======
+                    <Col lg={6} className="mt-3">
+                        {selectedItem && (
+                            <div>
+                                <img
+                                    src={selectedItem.image}
+                                    alt={selectedItem.name}
+                                    style={{ 
+                                        width:"100%",
+                                        height: '60vh',borderRadius:"40px 100px " ,marginTop: "38px",padding:"20px",borderTop:'1px double green',borderBottom:"1px double blue"}}
+                                />
+                            </div>
+                        )}
+                    </Col>
+                    
+                </Row>
+            </Container>
+
+            </Container>
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
    
     </div>
   );

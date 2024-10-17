@@ -12,12 +12,15 @@
   /* Add additional font formats if necessary */
   font-style: normal;
 }
+<<<<<<< HEAD
 @font-face {
   font-family: 'Montserrat-Bold';
   src: url('../../public/fonts/Montserrat-Bold.ttf') format('opentype');
   /* Add additional font formats if necessary */
   font-style: normal;
 }
+=======
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
 .logo-heading {
     background: linear-gradient(90deg, green, blue);
     -webkit-background-clip: text;
@@ -31,7 +34,11 @@
     margin-left: 0px;
   }
   .common-nav{
+<<<<<<< HEAD
     font-family: "Montserrat-Bold",sans-serif;
+=======
+    font-family: Montserrat, sans-serif;
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
     font-size: 1.4rem;
     min-height: 3rem;
     font-weight: 500;
@@ -180,8 +187,11 @@
     
   }
   
+<<<<<<< HEAD
 
   
+=======
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
   /* Media query for mobile phones */
   @media screen and (max-width: 480px) {
     .logo-heading {
@@ -400,11 +410,19 @@
 
 .first-content{
   height:70vh;
+<<<<<<< HEAD
   margin-top:200px;
 }
 @media(max-width:768px){
   .first-content{
     margin-top: 150px;
+=======
+  margin-top:130px;
+}
+@media(max-width:768px){
+  .first-content{
+    margin-top: 10px;
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
   }
 }
 
@@ -412,6 +430,7 @@
 
 .backgroundimg-deconsolidation{
   background-image: url('../../public/Assets/Grey\ BG\ Dark.png');
+<<<<<<< HEAD
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -563,4 +582,9 @@ button {
   .IndustriesServe-page{
     margin-top: 150px;
   }
+=======
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
 }
