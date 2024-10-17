@@ -1,0 +1,28 @@
+@media(max-width:328px){
+    .ns-logo{
+        margin-left: 10px;
+        height: 10vh;
+        width: 20vw;
+    }
+    .btn2-nav{
+        margin-left: 90px;
+    margin-top: -10px;
+    }
+    .toggle-btn{
+        margin-top: -70px;
+    
+    }
+    .btn-5 {
+      
+        width: 130px;
+        height: 20px;
+        line-height: 4px;
+        padding: 0;
+        border: none;
+        font-size: normal;
+        background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+        overflow: hidden;
+        color: white;
+       
+    }
+}

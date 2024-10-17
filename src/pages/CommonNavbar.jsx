@@ -2,17 +2,12 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import './commoncss.css'
+import './Responsive.css'
 import Nav from 'react-bootstrap/Nav';
-import integration from '../Assets/integration.webp'
 import {Row,Col} from 'react-bootstrap'
-import Content from './Content';
 import { useState } from 'react';
-import nsblack from '../Assets/ns black transparent.png'
-import Modal from 'react-bootstrap/Modal';
-
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import InputGroup from 'react-bootstrap/InputGroup';
+
 
 function Homepage() {
 
@@ -36,19 +31,19 @@ function Homepage() {
   };
   return (
     <div >
-      <div className='common-nav-fix' style={{ position: "fixed", top: 0, left: 0, right: 0, height: "16vh", zIndex: 1000 }}>
-     <Container fluid>
+      <div className='common-nav-fix' style={{ position: "fixed", top: 0, left: 0, background:"#e1e1e1",right: 0, height: "16vh", zIndex: 1000 }}>
+     <Container fluid className='bg-mob-view'>
      <Navbar className="justify-content-between">
       <Form inline>
       <img
-              src='./Assets/ns black transparent.png'
-              width="100"
-              height="50"
-             
+              src='./Assets/ns.svg'
+              width="100%"
+              height="30"
+             className='ns-logo'
               alt="React Bootstrap logo"
             />
       </Form>
-      <Form inline>
+      <Form inline className='btn2-nav'>
         <Row style={{display:"flex"}}>
           
           <Col xs="auto">
@@ -79,9 +74,9 @@ function Homepage() {
         <div class="dropdown" >
         <Nav.Link className="common-nav">Products <span style={{color:"green"}}>▼</span></Nav.Link>
         <div class="dropdown-content">
-    <a href="#" >Fulfillment Automation</a>
-    <a href="#">Order Management System</a>
-    <a href="#">Warehouse Management System</a>
+    <a href="/fulfillmentautomation" >Fulfillment Automation</a>
+    <a href="/ordermanagementsystem">Order Management System</a>
+    <a href="/warehousemanagementsystem">Warehouse Management System</a>
   </div>
   </div>
   <div className="dropdown2">
@@ -89,50 +84,50 @@ function Homepage() {
         Solutions <span style={{ color: "green" }}>▼</span>
       </Nav.Link>
       <div className="dropdown-content2">
-        <a href="#" onClick={handleWarehouseClick}>
+        <a href="/warehousemanagement" onClick={handleWarehouseClick}>
           Warehouse Management
         </a>
         {showSubMenu && (
           <div className="sub-dropdown-content">
-            <a href="#">Inbount Receipt</a>
-            <a href="#">Cross Docking</a>
-            <a href="#">Deconsolidation</a>
-            <a href="#">Quality Assurance</a>
-            <a href="#">Repacking & Putaway</a>
-            <a href="#">Pick Management</a>
-            <a href="#">Dispatch</a>
-            <a href="#">Inventory Management</a>
-            <a href="#">API Integration</a>
-            <a href="#">IOT Integration</a>
+            <a href="/inbountreceipt">Inbount Receipt</a>
+            <a href="/crossdocking">Cross Docking</a>
+            <a href="/deconsolidation">Deconsolidation</a>
+            <a href="/qualityassurance">Quality Assurance</a>
+            <a href="/replacingputaway">Repacking & Putaway</a>
+            <a href="/pickmanagement">Pick Management</a>
+            <a href="/dispatch">Dispatch</a>
+            <a href="/inventorymanagement">Inventory Management</a>
+            <a href="/apiintegration">API Integration</a>
+            <a href="/iotintegration">IOT Integration</a>
           </div>
         )}
 
-        <a href="#" onClick={handleSalesClick}>
+        <a href="/sales" onClick={handleSalesClick}>
           Sales
         </a>
         {showSalesSubMenu && (
           <div className="sub-dropdown-content">
-            <a href="#">Order Management</a>
-            <a href="#">Quotation Management</a>
-            <a href="#">Returns Management</a>
-            <a href="#">Process Management</a>
+            <a href="/ordermanagement">Order Management</a>
+            <a href="/quotationmanagement">Quotation Management</a>
+            <a href="/returnsmanagement">Returns Management</a>
+            <a href="/processmanagement">Process Management</a>
 
           </div>
         )}
 
-        <a href="#" onClick={handleAIPoweredClick}>
+        <a href="/aipoweredmultichannelfulfillment" onClick={handleAIPoweredClick}>
           AI-Powered Multi-Channel Fulfillment
         </a>
         {showAIPoweredSubMenu && (
           <div className="sub-dropdown-content">
-            <a href="#">Multi Channel Integration</a>
-            <a href="#">Order Processing</a>
-            <a href="#">Pick List Generation</a>
-            <a href="#">Pick Sequencing</a>
-            <a href="#">Work Force Management</a>
-            <a href="#">Packing and Shipping</a>
-            <a href="#">Fulfillment Validation</a>
-            <a href="#">E-commerce Integration</a>
+            <a href="/multichannelintegration">Multi Channel Integration</a>
+            <a href="/orderprocessing">Order Processing</a>
+            <a href="/picklistgeneration">Pick List Generation</a>
+            <a href="/picksequencing">Pick Sequencing</a>
+            <a href="/workforcemanagement">Work Force Management</a>
+            <a href="/packingandshipping">Packing and Shipping</a>
+            <a href="/fulfillmentvalidation">Fulfillment Validation</a>
+            <a href="/ecommerceintegration">E-commerce Integration</a>
 
           </div>
         )}

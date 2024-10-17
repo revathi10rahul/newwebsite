@@ -8,11 +8,8 @@ import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
 import Newdesigndemo from '../pages/Newdesigndemo'
 import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
-<<<<<<< HEAD
 import CommonNavbar from '../pages/CommonNavbar'
 import IndustriesServe from './IndustriesServe'
-=======
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
 function Content() {
   const [isContentToggled, setIsContentToggled] = useState(false);
 
@@ -59,11 +56,7 @@ function Content() {
   ];
   return (
     <div>
-<<<<<<< HEAD
         <CommonNavbar/>
-=======
-        <Homepage/>
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
         <Container className='first-content'>
       <Row className='primary-heading'>
         <Col lg={1}></Col>
@@ -95,10 +88,7 @@ function Content() {
     </Container>
     <Deconsolidation/>
     <AporaHomepage/>
-<<<<<<< HEAD
     <IndustriesServe/>
-=======
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
     </div>
   )
 }

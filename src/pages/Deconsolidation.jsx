@@ -5,23 +5,13 @@ import {Row,Col, Container} from 'react-bootstrap'
 const data = {
     'Material': {
       items: [
-<<<<<<< HEAD
-        { name: 'Unique Scan Code Generation', image: './Assets/image (1).png',description: 'An efficient dispatch method designed for bulk orders, ensuring quick and accurate delivery of large quantities to retailers.' },
+        { name: 'Unique Scan Code Generation', image: './Assets/work3.svg',description: 'An efficient dispatch method designed for bulk orders, ensuring quick and accurate delivery of large quantities to retailers.' },
         { name: 'Pallet, Bags, Carton Level Tracking', image: './Assets/eco.jpg' },
         { name: 'Purchase Order, Advanced Shipping Notice Linking', image: './Assets/Purchase-Order.webp' },
         { name: 'Invoice Aligned Product, Lot Trace', image: './Assets/invoiceallignedproduct.png' },
         { name: 'Electronic Record Transfer Deconsolidation And Crossdocking ', image: './Assets/electronictracking.jpg' },
         { name: 'Supplier Metrics Data Input For Procurement Planning', image: './Assets/team (2).jpg' },
         { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/tracking-warehouse.jpg' },
-=======
-        { name: 'Unique Scan Code Generation', image: './Assets/work3.jpg',description: 'An efficient dispatch method designed for bulk orders, ensuring quick and accurate delivery of large quantities to retailers.' },
-        { name: 'Pallet, Bags, Carton Level Tracking', image: './Assets/eco.jpg' },
-        { name: 'Purchase Order, Advanced Shipping Notice Linking', image: './Assets/work4.jpg' },
-        { name: 'Invoice Aligned Product, Lot Trace', image: './Assets/eco.webp' },
-        { name: 'Electronic Record Transfer Deconsolidation And Crossdocking ', image: './Assets/work2.webp' },
-        { name: 'Supplier Metrics Data Input For Procurement Planning', image: './Assets/work3.jpg' },
-        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work4.jpg' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       ],
     },
     'Deconsolidation': {
@@ -32,11 +22,7 @@ const data = {
         { name: 'Invoice Aligned Product, Lot, Quality Trace', image: './Assets/work4.jpg' },
         { name: 'Automated notification generation to Quality Assurance', image: './Assets/work4.jpg' },
         { name: 'Automated notification generation to dispatch for Buk Delivery', image: './Assets/work4.jpg' },
-<<<<<<< HEAD
         
-=======
-        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work4.jpg' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       ],
     },
     'Quality': {
@@ -49,11 +35,7 @@ const data = {
         { name: 'Item Scan Code Level Quality Status Mapping', image: './Assets/work4.jpg' },
         { name: 'Automated Notification Generation To Unpacking And Repacking', image: './Assets/work4.jpg' },
         { name: 'Automated Notification Generation To Put Away', image: './Assets/work3.jpg' },
-<<<<<<< HEAD
         
-=======
-        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work2.jpg' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       ],
     },
     'Unpacking': {
@@ -63,11 +45,7 @@ const data = {
         { name: 'Item Staging Location Assignment', image: './Assets/work4.jpg' },
         { name: 'Item Scan Code Level  Batch Creation & Quality Status Mapping', image: './Assets/work3.jpg' },
         { name: 'Automated Notification Generation To Put Away', image: './Assets/work4.jpg' },
-<<<<<<< HEAD
        
-=======
-        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work3.jpg' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       ],
     },
     'PutAway': {
@@ -80,11 +58,7 @@ const data = {
           { name: 'Item Scan Code Level  Batch Location Level  Record Creation', image: './Assets/work2.jpg' },
           { name: 'Real Time Inventory Information', image: './Assets/work3.jpg' },
 
-<<<<<<< HEAD
       
-=======
-          { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work3.jpg' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
 
         ],
       },
@@ -125,15 +99,7 @@ const data = {
             image: './Assets/work3.jpg',
             description: 'Provides real-time updates on order fulfillment status, enhancing communication and customer satisfaction.'
         },
-<<<<<<< HEAD
         
-=======
-        {
-            name: 'API Integrations To Purchase, Finance & ERP Applications',
-            image: './Assets/work3.jpg',
-            description: 'Facilitates seamless integration with purchasing, finance, and ERP systems for streamlined order processing and data management.'
-        },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
     ],
 },
 
@@ -146,11 +112,7 @@ const data = {
           { name: 'Unidirectional Pick Sequencing', image: './Assets/work4.jpg', description: 'A systematic approach to order picking that minimizes travel time by following a unidirectional path through the storage area.' },
           { name: 'Automated Reorder Level Notification', image: './Assets/work2.jpg', description: 'Automated alerts that notify managers when inventory levels fall below a predetermined threshold, preventing stockouts.' },
           { name: 'Real Time Order Fulfilment Status Information', image: './Assets/work3.jpg', description: 'Provides live updates on order processing status, allowing businesses to track fulfilment and improve customer communication.' },
-<<<<<<< HEAD
           
-=======
-          { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work3.jpg', description: 'Seamless integration with existing software systems to streamline purchasing, financial management, and enterprise resource planning.' },
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       ],
       },    
   };
@@ -173,21 +135,12 @@ const data = {
   const handleItemClick = (item) => {
     setSelectedItem(item); // Set the selected item when clicked
   };
-<<<<<<< HEAD
 
   ;
-=======
-  const [isOpen, setIsOpen] = useState(false); // State to manage visibility of headers
-
-  const toggleHeaders = () => {
-    setIsOpen(!isOpen); // Toggle the open/close state
-  };
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
   return (
     <div>
 
       <Container>
-<<<<<<< HEAD
       <p className='font-highlight-deconsol'> Revolutionize your warehouse operations with our AI-driven software designed for optimal warehouse management solutions.</p>  
       <br />
     
@@ -197,12 +150,6 @@ const data = {
      Our innovative  enhances efficiency by enabling the seamless management of your inventory and logistics, ensuring that every product is tracked in real-time. Experience lightning-speed fulfillment that significantly boosts customer satisfaction. With intelligent automation features and smart analytics, our WMS solution  streamlines your operations, reduces costs, and maximizes productivity. Transform the way you manage your warehouse and take your logistics to the next level with our cutting-edge technology.
      </p>
      <div style={{height:'30vh'}}></div>
-=======
-      <div style={{display:"flex",justifyContent:"center",textAlign:"justify"}}>
-     <p  style={{fontSize:"20px"}}>
-     Revolutionize your warehouse operations with our AI-driven software designed for optimal warehouse management solutions. Our innovative  enhances efficiency by enabling the seamless management of your inventory and logistics, ensuring that every product is tracked in real-time. Experience lightning-speed fulfillment that significantly boosts customer satisfaction. With intelligent automation features and smart analytics, our WMS solution  streamlines your operations, reduces costs, and maximizes productivity. Transform the way you manage your warehouse and take your logistics to the next level with our cutting-edge technology.
-     </p>
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
       </div>
       </Container>
        <h1 className='headingStyle'>Purvey WMS</h1>
@@ -244,34 +191,15 @@ const data = {
                             </div>
                         )}
                     </Col>
-<<<<<<< HEAD
                     <Col lg={6} >
-=======
-                    <Col lg={6} className="mt-3">
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
             {selectedItem && (
                 <div>
                     <img
                         src={selectedItem.image}
                         alt={selectedItem.name}
-                        style={{
-                            width: "100%",
-                            height: '50vh',
-                            borderRadius: "40px 100px",
-<<<<<<< HEAD
-                            marginTop: "10px",
-=======
-                            marginTop: "38px",
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
-                            padding: "20px",
-                           
-                        }}
+                       className='deconsolidation-img'
                     />
-<<<<<<< HEAD
                     <p style={{ marginTop: '1px', fontSize: '1.2em' }}>
-=======
-                    <p style={{ marginTop: '20px', fontSize: '1.2em' }}>
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
                         {selectedItem.description}
                     </p>
                 </div>

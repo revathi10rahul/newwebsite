@@ -15,11 +15,12 @@
     display: flex;
     justify-content: space-between;
     /* flex-wrap: wrap; */
+    font-weight: bold;
     padding: 0;
     margin: 0;
     letter-spacing: 3px;
-    font-family: 'Good Times';
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* font-family: 'Good Times'; */
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
     list-style-type: none;
     border-radius: 5px; /* Optional: Adds rounded corners to the list */
   }
@@ -95,16 +96,11 @@
   color: white;
 }
 
-/* Item hover effect */
-<<<<<<< HEAD
-/* .block-list li:hover {
-  background-color: lightgray;
-} */
-=======
+
 .block-list li:hover {
   background-color: lightgray;
 }
->>>>>>> 41d7f8423ec434f789a0487606e5f7c5391e9c57
+
 
 /* Selected item styling */
 .selected-item {
@@ -140,7 +136,7 @@
   font-weight: bold;
   text-align: center;
   margin-top: 50px;
-  background: linear-gradient(90deg, blue,green);
+  background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
   -webkit-background-clip: text;
   color: transparent;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
@@ -149,6 +145,7 @@
 @media(max-width:768px){
   .headingStyle{
     font-size: 20px;
+    margin-top: 252px;  
     font-weight: bold;
   }
   
