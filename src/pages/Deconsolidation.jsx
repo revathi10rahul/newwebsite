@@ -5,13 +5,13 @@ import {Row,Col, Container} from 'react-bootstrap'
 const data = {
     'Material': {
       items: [
-        { name: 'Unique Scan Code Generation', image: './Assets/work3.svg',description: 'An efficient dispatch method designed for bulk orders, ensuring quick and accurate delivery of large quantities to retailers.' },
-        { name: 'Pallet, Bags, Carton Level Tracking', image: './Assets/eco.jpg' },
-        { name: 'Purchase Order, Advanced Shipping Notice Linking', image: './Assets/Purchase-Order.webp' },
-        { name: 'Invoice Aligned Product, Lot Trace', image: './Assets/invoiceallignedproduct.png' },
-        { name: 'Electronic Record Transfer Deconsolidation And Crossdocking ', image: './Assets/electronictracking.jpg' },
-        { name: 'Supplier Metrics Data Input For Procurement Planning', image: './Assets/team (2).jpg' },
-        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/tracking-warehouse.jpg' },
+        { name: 'Unique Scan Code Generation', image: './Assets/work3.svg',description: 'Transform Your Warehouse Operations with Unique Scans for Effortless Inventory Management and Increased Efficiency' },
+        { name: 'Pallet, Bags, Carton Level Tracking', image: './Assets/eco.jpg',description:'Achieve Complete Visibility: Track items in Pallets, Bags, and Cartons from Inward Receipt to Deconsolidation, Putaway, Picking, and Dispatch' },
+        { name: 'Purchase Order, Advanced Shipping Notice Linking', image: './Assets/work3.svg',description:'Seamlessly Connect Purchase Orders and Advanced Shipping Notices to Enhance Material Receipt Accuracy and Efficiency' },
+        { name: 'Invoice Aligned Product, Lot Trace', image: './Assets/work3.svg' ,description:'Optimize Material Inward Processes with Lot Tracing for Expiry and Location Accuracy in Your Warehouse'},
+        { name: 'Electronic Record Transfer Deconsolidation And Crossdocking ', image: './Assets/work3.svg',description:'Streamline Operations with Swift, Real-Time Information Sharing to Eliminate Data Discrepancies Across Departments' },
+        { name: 'Supplier Metrics Data Input For Procurement Planning', image: './Assets/work3.svg',description:'Enhance Procurement Planning with Comprehensive Supplier Metrics Data Input'  },
+        { name: 'API Integrations To Purchase, Finance & ERP Applications', image: './Assets/work3.svg',description:'' },
       ],
     },
     'Deconsolidation': {
@@ -21,7 +21,7 @@ const data = {
         { name: 'Bulk order Package Separation', image: './Assets/work3.jpg' },
         { name: 'Invoice Aligned Product, Lot, Quality Trace', image: './Assets/work4.jpg' },
         { name: 'Automated notification generation to Quality Assurance', image: './Assets/work4.jpg' },
-        { name: 'Automated notification generation to dispatch for Buk Delivery', image: './Assets/work4.jpg' },
+        { name: 'Automated notification generation to dispatch for Bulk Delivery', image: './Assets/work4.jpg' },
         
       ],
     },
@@ -146,7 +146,7 @@ const data = {
     
       <div style={{display:"flex",justifyContent:"center",textAlign:"justify"}}>
      
-     <p  style={{fontSize:"20px"}}>
+     <p   className='deconsolidation-paragraph'>
      Our innovative  enhances efficiency by enabling the seamless management of your inventory and logistics, ensuring that every product is tracked in real-time. Experience lightning-speed fulfillment that significantly boosts customer satisfaction. With intelligent automation features and smart analytics, our WMS solution  streamlines your operations, reduces costs, and maximizes productivity. Transform the way you manage your warehouse and take your logistics to the next level with our cutting-edge technology.
      </p>
      <div style={{height:'30vh'}}></div>

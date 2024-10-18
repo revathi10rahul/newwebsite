@@ -1,17 +1,18 @@
-@media(max-width:328px){
+
+
+@media(max-width:375px){
     .ns-logo{
-        margin-left: 10px;
+        margin-left: -8px;
         height: 10vh;
         width: 20vw;
     }
     .btn2-nav{
-        margin-left: 90px;
-    margin-top: -10px;
+     
+        margin-left: 156px;   
+            margin-top: -2px;
+
     }
-    .toggle-btn{
-        margin-top: -70px;
     
-    }
     .btn-5 {
       
         width: 130px;
@@ -25,4 +26,169 @@
         color: white;
        
     }
+    .font-highlight-deconsol {
+        margin-top: 35px;
+        font-size: 16px;
+        width: 100%;
+        font-weight: 500;
+    }   
+    .primary-heading {
+       
+        padding-left: 2px;
+        width: 100%;
+        height: 50vh;
+    }
+    .highlight-text {
+        font-family: Helvetica;
+        font-size: 0.8rem;
+        color: #0f0f0f;
+        font-weight: bold;
+        display: block;
+    }
+    .subheading {
+        font-size: 0rem;
+    }
+    .deconsolidation-paragraph{
+        width: 80%;
+    font-size: 12px;
 }
+.headingStyle {
+   
+    font-size: 20px;
+    margin-top: 31px;
+    font-weight: bold;
+}
+.responsive-list li {
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+}
+.responsive-list li {
+    cursor: pointer;
+    padding: 11px;
+    transition: background-color 0.3s ease;
+}
+.responsive-list li {
+    flex: 1 1 100%; /* Each item takes up the full width on 320px screen */
+   margin-left: 1px;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15), rgb(5, 5, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.deconsolidation-img {
+    width: 100%;
+    height: 34vh;
+    border-radius: 27px;
+    margin-top: 10px;
+}
+.AporaHomepage {
+    margin-top: 500px;
+}
+.toggle-btn {
+    margin-top: -63px;
+    margin-right: 147px;
+}
+}
+
+
+
+
+
+@media(max-width:320px){
+    .ns-logo{
+        margin-left: -8px;
+        height: 10vh;
+        width: 20vw;
+    }
+    .btn2-nav{
+        margin-left:110px;   
+        margin-top: -2px;
+    }
+    
+    .btn-5 {
+      
+        width: 130px;
+        height: 20px;
+        line-height: 4px;
+        padding: 0;
+        border: none;
+        font-size: normal;
+        background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+        overflow: hidden;
+        color: white;
+       
+    }
+    .font-highlight-deconsol {
+        margin-top: 35px;
+        font-size: 16px;
+        width: 100%;
+        font-weight: 500;
+    }   
+    .primary-heading {
+       
+        padding-left: 2px;
+        width: 100%;
+        height: 50vh;
+    }
+    .highlight-text {
+        font-family: Helvetica;
+        font-size: 0.8rem;
+        color: #0f0f0f;
+        font-weight: bold;
+        display: block;
+    }
+    .subheading {
+        font-size: 0rem;
+    }
+    .deconsolidation-paragraph{
+        width: 80%;
+    font-size: 12px;
+}
+.headingStyle {
+   
+    font-size: 20px;
+    margin-top: 31px;
+    font-weight: bold;
+}
+.responsive-list li {
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+}
+.responsive-list li {
+    cursor: pointer;
+    padding: 11px;
+    transition: background-color 0.3s ease;
+}
+.responsive-list li {
+    flex: 1 1 100%; /* Each item takes up the full width on 320px screen */
+   margin-left: 1px;
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(to bottom, rgb(15, 15, 15), rgb(5, 5, 5));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+.deconsolidation-img {
+    width: 100%;
+    height: 34vh;
+    border-radius: 27px;
+    margin-top: 10px;
+}
+.AporaHomepage {
+    margin-top: 500px;
+}
+.toggle-btn {
+    margin-top: -63px;
+    margin-right: 147px;
+}
+}
+
+
+

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import integration from '../Assets/integration.webp'
 import {Row,Col ,Container} from 'react-bootstrap'
 import cuttingedge from '../Assets/cuttingedge.webp'
@@ -15,7 +15,8 @@ function Content() {
 
 
 
-  const [contentIndex, setContentIndex] = useState(0); // State to track the content index
+
+
 
   const handleToggleContent = () => {
     setContentIndex((prevIndex) => (prevIndex + 1) % 3); // Cycle through the three contents
@@ -54,6 +55,24 @@ function Content() {
       ]
     }
   ];
+
+
+  const [contentIndex, setContentIndex] = useState(0);
+  const [flipping, setFlipping] = useState(false);
+
+  // Handle content flipping with interval
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFlipping(true); // Start flipping animation
+      setTimeout(() => {
+        // Change content index after flip animation
+        setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length);
+        setFlipping(false); // Reset flipping state
+      }, 500); // Duration matches the animation time
+    }, 2000); // Time between content change
+
+    return () => clearInterval(interval); // Clean up interval on component unmount
+  }, [])
   return (
     <div>
         <CommonNavbar/>

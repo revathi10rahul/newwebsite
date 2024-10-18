@@ -130,26 +130,8 @@
   margin: 20px ; /* Adjust spacing between headers */
   cursor: pointer;
 }
-.headingStyle{
-  font-size: 40px;
-  font-family: 'Pirulen';
-  font-weight: bold;
-  text-align: center;
-  margin-top: 50px;
-  background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
-  -webkit-background-clip: text;
-  color: transparent;
-  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
-}
 
-@media(max-width:768px){
-  .headingStyle{
-    font-size: 20px;
-    margin-top: 252px;  
-    font-weight: bold;
-  }
-  
-}
+
 
 
 

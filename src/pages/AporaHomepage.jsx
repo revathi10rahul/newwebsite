@@ -74,7 +74,7 @@ const data = {
      
       </div>
       </Container>
-       <h1 className='headingStyle'>APORA </h1>
+       <h1 className='headingStyle-Apora'>APORA </h1>
      
             <div >
                 {/* Main Headers */}
@@ -119,14 +119,7 @@ const data = {
                     <img
                         src={selectedItem.image}
                         alt={selectedItem.name}
-                        style={{
-                            width: "100%",
-                            height: '50vh',
-                            borderRadius: "40px 100px",
-                            marginTop: "10px",
-                            padding: "20px",
-                           
-                        }}
+                       className='aporahomepage-image'
                     />
                     <p style={{ marginTop: '20px', fontSize: '1.2em' }}>
                         {selectedItem.description}
