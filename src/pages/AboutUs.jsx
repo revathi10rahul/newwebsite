@@ -1,11 +1,10 @@
 import React from 'react'
-import CommonNavbar from '../pages/CommonNavbar'
 import './commoncss.css'
 import { Container, Row ,Col} from 'react-bootstrap'
 function AboutUs() {
   return (
     <div>
-        <CommonNavbar />
+       
         <div className='aboutpage-starting'>
   <h1 className="gradient-text">WE HAVE BEEN AROUND <br /></h1>
   <h3 className="gradient-text">FOR A Decade plus</h3>

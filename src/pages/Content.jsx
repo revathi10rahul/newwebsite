@@ -4,9 +4,7 @@ import {Row,Col ,Container} from 'react-bootstrap'
 import './newdesigndemo.css'
 import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
-import CommonNavbar from '../pages/CommonNavbar'
 import IndustriesServe from './IndustriesServe'
-import Footer from '../components/Footer'
 function Content() {
 
 

@@ -99,29 +99,7 @@
 
 
 @media(max-width:320px){
-    .ns-logo{
-        margin-left: -8px;
-        height: 10vh;
-        width: 20vw;
-    }
-    .btn2-nav{
-        margin-left:110px;   
-        margin-top: -2px;
-    }
-    
-    .btn-5 {
-      
-        width: 130px;
-        height: 20px;
-        line-height: 4px;
-        padding: 0;
-        border: none;
-        font-size: normal;
-        background: linear-gradient(to left, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
-        overflow: hidden;
-        color: white;
-       
-    }
+   
     .font-highlight-deconsol {
         margin-top: 35px;
         font-size: 16px;

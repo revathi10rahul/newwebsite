@@ -449,7 +449,7 @@
 .first-content{
   height:70vh;
 
-  margin-top:200px;
+  margin-top: 83px;
 }
 @media(max-width:768px){
   .first-content{

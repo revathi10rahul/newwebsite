@@ -55,9 +55,7 @@ function Homepage() {
             <button class="custom-btn btn-5"><span>Contact Us</span></button>
             <button class="custom-btn btn-5 ms-2"><span>Request Demo</span></button>
             </div>
-      {/* <Form inline>
       
-      </Form> */}
   
     </Navbar>
     <Container fluid>
