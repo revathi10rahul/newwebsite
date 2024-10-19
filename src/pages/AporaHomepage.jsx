@@ -5,7 +5,7 @@ import {Row,Col, Container} from 'react-bootstrap'
 const data = {
     'Put Away': {
       items: [
-        { name: 'Put Away List Generation', image: './Assets/work3.svg' },
+        { name: 'Put Away List Generation', image: './Assets/work3.jpg' },
         { name: 'Dynamic Storage Optimization', image: './Assets/eco.jpg' },
         { name: 'Resource Optimization', image: './Assets/work4.jpg' },
         { name: 'For Process Control and Monitoring', image: './Assets/eco.webp' },
@@ -92,7 +92,7 @@ const data = {
             </div>
 
             {/* List of Items based on Selected Header */}
-            <div className='backgroundimg-deconsolidation'>
+            <div className='backgroundimg-apora'>
             <Container  >
                 <Row>
                     

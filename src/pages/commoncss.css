@@ -39,8 +39,8 @@
 
     font-family: Montserrat, sans-serif;
 
-    font-size: 1.4rem;
-    min-height: 3rem;
+    font-size: 3rem;
+    min-height: 4rem;
     font-weight: 500;
     line-height: 1.2;
   }
@@ -129,7 +129,6 @@
   font-family: 'Pirulen';
   font-weight: bold;
   text-align: center;
-  margin-top: 50px;
   background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
   -webkit-background-clip: text;
   color: transparent;
@@ -146,16 +145,15 @@
   color: transparent;
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
 }
-  .aporahomepage-image{
-   
-      width: 100%;
+.aporahomepage-image {
+  width: 100%;
       height: 50vh;
-      border-radius: 40px 100px;
-      margin-top: 10px;
-      padding: 20px;
-     
+  border-radius: 40px 40px; /* Rounded corners */
+  margin-top: 10px;
+  /* Shadow/Projection effect */
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5); /* White shadow */
+}
 
-  }
   .icon-overlay {
     position: absolute;
     top: 10px; /* Adjust this to position the icon vertically */
@@ -396,7 +394,7 @@
 .integrationimage{
   height:280px;
   width: 150%;
-  margin-left: 210px;
+  margin-left: 170px;
   margin-top:80px;
   border-radius: 20px 20px;
   border-left: 10px solid rgb(1, 2, 1);
@@ -466,10 +464,15 @@
   }
 }
 
-
-
 .backgroundimg-deconsolidation{
   background-image: url('../../public/Assets/Grey\ BG\ Dark.png');
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.backgroundimg-apora{
+  background-image: url('../../public/Assets/best\ blue.jpg');
   height: 60vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -682,7 +685,7 @@ button {
   
       width: 100%;
       height: 50vh;
-      border-radius: 40px 100px;
+      border-radius: 40px 40px;
       margin-top: 10px;
       padding: 20px;
      
@@ -704,4 +707,74 @@ button {
 
   .deconsolidation-paragraph{
     font-size: 20px;
+  }
+
+
+
+
+
+  .block-list-deconsolidation {
+    color: rgb(5, 5, 5);
+    display: block; /* Ensures each item is on a new line */
+    text-align: justify; /* Justifies the text */
+    padding: 0; /* Reset default padding */
+    margin: 0; /* Reset default margin */
+    list-style-type: none; /* Remove default list styling */
+    cursor: pointer;
+  }
+  
+  .block-list-deconsolidation li {
+    width: 100%;
+    margin-bottom: 10px; /* Space between list items */
+    padding: 10px; /* Add padding to each list item */
+    border-left: 5px solid; /* Add a left border */
+    border-image: linear-gradient(to bottom, green, blue) 1; /* Linear gradient for the border */
+   
+  }
+  .selected-item-deconsolidation {
+    border: 2px solid blue;
+    color: rgb(3, 3, 3);
+    letter-spacing: 3px;
+    border-radius: 10px;
+    padding: 5px;
+  }
+
+  /* -------------------------------about us  */
+  .aboutpage-starting {
+    height: 60vh;
+    width: 100%;
+    background-image: url('../Assets/Grey BG Dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 60px;
+    /* Centerng the text vertically and horizontally */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Arrange children vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /*  Center items vertically */
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'pirulen';
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .aboutpage-subtitle{
+    padding: 30px;
+    font-size: 300;
+    font-family: 'good times';
+  }
+  .gradient-text-h6 {
+   
+    font-family: 'Good Times';
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   
   }

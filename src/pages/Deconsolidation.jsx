@@ -177,12 +177,12 @@ const data = {
                     <Col lg={6}>
                         {selectedHeader && (
                             <div>
-                                <ul className="block-list mt-2">
+                                <ul className="block-list-deconsolidation mt-2">
                                     {items.map((item) => (
                                         <li
                                             key={item.name}
                                             onClick={() => handleItemClick(item)}
-                                            className={selectedItem?.name === item.name ? 'selected-item' : ''}
+                                            className={selectedItem?.name === item.name ? 'selected-item-deconsolidation' : ''}
                                         >
                                             {item.name}
                                         </li>

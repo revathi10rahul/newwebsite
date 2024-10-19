@@ -1,26 +1,18 @@
 import React,{useState,useEffect} from 'react'
-import integration from '../Assets/integration.webp'
 import {Row,Col ,Container} from 'react-bootstrap'
-import cuttingedge from '../Assets/cuttingedge.webp'
-import Homepage from './Homepage'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
-import Newdesigndemo from '../pages/Newdesigndemo'
+
+import './newdesigndemo.css'
 import Deconsolidation from './Deconsolidation'
 import AporaHomepage from './AporaHomepage'
 import CommonNavbar from '../pages/CommonNavbar'
 import IndustriesServe from './IndustriesServe'
+import Footer from '../components/Footer'
 function Content() {
-  const [isContentToggled, setIsContentToggled] = useState(false);
 
 
 
 
 
-
-  const handleToggleContent = () => {
-    setContentIndex((prevIndex) => (prevIndex + 1) % 3); // Cycle through the three contents
-  };
 
   // Define the content arrays
   const contentData = [
@@ -58,24 +50,18 @@ function Content() {
 
 
   const [contentIndex, setContentIndex] = useState(0);
-  const [flipping, setFlipping] = useState(false);
-
+  
   // Handle content flipping with interval
   useEffect(() => {
     const interval = setInterval(() => {
-      setFlipping(true); // Start flipping animation
-      setTimeout(() => {
-        // Change content index after flip animation
-        setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length);
-        setFlipping(false); // Reset flipping state
-      }, 500); // Duration matches the animation time
+      setContentIndex((prevIndex) => (prevIndex + 1) % contentData.length);
     }, 2000); // Time between content change
 
     return () => clearInterval(interval); // Clean up interval on component unmount
-  }, [])
+  }, [contentData.length]);
   return (
     <div>
-        <CommonNavbar/>
+      
         <Container className='first-content'>
       <Row className='primary-heading'>
         <Col lg={1}></Col>
@@ -96,7 +82,7 @@ function Content() {
         </Col>
      
         <Col lg={3}>
-        <img src={integration} alt="integration image" className='integrationimage'/>
+        <img src='../Assets/Banner picture1.png' alt="integrationimage" className='integrationimage'/>
         </Col>
         {/* <Col lg={1} style={{marginTop:"150px"}}>
         <span className='next-btn' onClick={handleToggleContent}>
@@ -108,6 +94,7 @@ function Content() {
     <Deconsolidation/>
     <AporaHomepage/>
     <IndustriesServe/>
+
     </div>
   )
 }

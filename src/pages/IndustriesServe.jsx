@@ -4,7 +4,7 @@ import {  Container  } from 'react-bootstrap'
 
 function IndustriesServe() {
   return (
-    <div style={{height:"50vh"}} className='IndustriesServe-page'>
+    <div style={{height:"55vh"}} className='IndustriesServe-page'>
     <h2 className='IndustriesServe-heading'>Industry Experts Call Us a Differentiator</h2>
     <Container >
     <div class="image-container">

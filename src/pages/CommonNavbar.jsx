@@ -4,9 +4,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import './commoncss.css'
 import './Responsive.css'
 import Nav from 'react-bootstrap/Nav';
-import {Row,Col} from 'react-bootstrap'
+
 import { useState } from 'react';
-import Form from 'react-bootstrap/Form';
+import { useNavigate } from 'react-router-dom';
+
 
 
 function Homepage() {
@@ -29,48 +30,51 @@ function Homepage() {
     setShowSubMenu(false); // Close other sub-menus
     setShowSalesSubMenu(false); // Close other sub-menus
   };
+
+  // ------------------------------------------------
+  const navigate=useNavigate()
+  const handleAboutUs=()=>{
+    navigate('/aboutus')
+  }
+
+  const handleHome=()=>{
+    navigate('/')
+  }
   return (
     <div >
-      <div className='common-nav-fix' style={{ position: "fixed", top: 0, left: 0, background:"#e1e1e1",right: 0, height: "16vh", zIndex: 1000 }}>
+      <div className='common-nav-fix' style={{ boxShadow: '3px 3px 10px lightslategray', position: "fixed", top: 0, left: 0, background:"white",right: 0, height: "16vh", zIndex: 1000 }}>
      <Container fluid className='bg-mob-view'>
      <Navbar className="justify-content-between">
-      <Form inline>
-      <img
-              src='./Assets/ns.svg'
-              width="100%"
-              height="30"
+     <img
+              src='./Assets/ns black transparent.png'
+             style={{height:"auto",width:"8%"}}
              className='ns-logo'
               alt="React Bootstrap logo"
             />
-      </Form>
-      <Form inline className='btn2-nav'>
-        <Row style={{display:"flex"}}>
-          
-          <Col xs="auto">
-          <button class="custom-btn btn-5"><span>Contact Us</span></button>
-          </Col>
-        
-          <Col xs="auto">
-          <button class="custom-btn btn-5"><span>Request Demo</span></button>
-          </Col>
-        </Row>
-      </Form>
+             <div style={{display:"flex"}}>
+            <button class="custom-btn btn-5"><span>Contact Us</span></button>
+            <button class="custom-btn btn-5 ms-2"><span>Request Demo</span></button>
+            </div>
+      {/* <Form inline>
+      
+      </Form> */}
+  
     </Navbar>
     <Container fluid>
   <Navbar expand="md" collapseOnSelect className='toggle-btn'>
     <Navbar.Brand href="/" ></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav" className='toggle-btn-background-setting'>
-      <Nav className="ml-auto">
+      <Nav className="d-flex justify-content-center mx-5  fs-6">
      
  
   
 
-      <Nav.Link className="dropbtn common-nav" >
+      <Nav.Link className="dropbtn common-nav " onClick={handleHome}>
               Home
             </Nav.Link>
             
-        <Nav.Link className="common-nav">About Us</Nav.Link>
+        <Nav.Link className="common-nav" onClick={handleAboutUs}>About Us</Nav.Link>
         <div class="dropdown" >
         <Nav.Link className="common-nav">Products <span style={{color:"green"}}>▼</span></Nav.Link>
         <div class="dropdown-content">
