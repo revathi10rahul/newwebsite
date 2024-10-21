@@ -1,7 +1,10 @@
 import React from 'react'
 import './footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons';
+
 import { faEnvelope, faLocationDot, faPhone, faShare } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 function Footer() {
   return (
     <div>
@@ -48,15 +51,15 @@ Palakkad Kerala <br />
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="/index">
-                                    <img src='./Assets/ns white transparent.png' class="img-fluid" alt="logo"/></a>
+                                    <im g src='./Assets/ns white transparent.png' class="img-fluid" alt="logo"/></a>
                             </div>
                             <div class="footer-text">
                                 <p>A decade old software development company continuously focused in delivering higher levels of automation leveraging new and upcoming technologies such as AI and internet of things. We build solutions which are scalable and can integrate seamlessly with other software solutions that exist.</p>
                             </div>
                             <div class="footer-social-icon">
                                 <span>Follow us</span>
-                                <a href="/facebook"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="/twitter"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="/facebook"> <FontAwesomeIcon icon={faSquareInstagram} /> <i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="/twitter"><FontAwesomeIcon icon={faLinkedin} />  <i class="fab fa-twitter twitter-bg"></i></a>
                                 <a href="/google"><i class="fab fa-google-plus-g google-bg"></i></a>
                             </div>
                         </div>

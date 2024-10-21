@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet'; // Import Helmet for managing meta tags
 
 import {Row,Col, Container} from 'react-bootstrap'
 // Sample data for headers and corresponding items with images

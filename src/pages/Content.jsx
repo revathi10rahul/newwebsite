@@ -1,5 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import {Row,Col ,Container} from 'react-bootstrap'
+import { Helmet } from 'react-helmet'; // Import Helmet
 
 import './newdesigndemo.css'
 import Deconsolidation from './Deconsolidation'
@@ -59,7 +60,20 @@ function Content() {
   }, [contentData.length]);
   return (
     <div>
-      
+       <Helmet>
+        <title>Apora - AI Powered Fulfillment Automation</title>
+        <meta name="description" content="Discover Apora, an AI-powered fulfillment automation system designed to save costs and improve efficiency in warehouse management." />
+        <meta name="keywords" content="Apora, Fulfillment Automation, Warehouse Management, AI Solutions" />
+        <meta name="author" content="Your Company Name" />
+        <meta property="og:title" content="Apora - AI Powered Fulfillment Automation" />
+        <meta property="og:description" content="Discover Apora, an AI-powered fulfillment automation system designed to save costs and improve efficiency in warehouse management." />
+        <meta property="og:image" content="../Assets/Banner picture1.png" />
+        <meta property="og:url" content="https://www.yourwebsite.com/apora" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Apora - AI Powered Fulfillment Automation" />
+        <meta name="twitter:description" content="Discover Apora, an AI-powered fulfillment automation system designed to save costs and improve efficiency in warehouse management." />
+        <meta name="twitter:image" content="../Assets/Banner picture1.png" />
+      </Helmet>
         <Container className='first-content'>
       <Row className='primary-heading'>
         <Col lg={1}></Col>

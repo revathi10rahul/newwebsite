@@ -7,6 +7,7 @@ import Deconsolidation from './pages/Deconsolidation';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter,Routes,Route  } from 'react-router-dom';
 import NavbarCommon from './pages/NavbarCommon';
+import CommonContact from './pages/CommonContact';
 function App() {
   return (
     <HashRouter>
@@ -18,6 +19,7 @@ function App() {
      <Route path='/' element={<Content/>}/>
      <Route path='/deconsolidation' element={<Deconsolidation/>}/>
     <Route path='/aboutus' element={<AboutUs/>}/>
+    <Route path='/contactus' element={<CommonContact/>}/>
 
    </Routes>
        <Footer/>

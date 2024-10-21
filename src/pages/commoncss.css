@@ -125,7 +125,7 @@
  
 
  .headingStyle{
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Pirulen';
   font-weight: bold;
   text-align: center;
@@ -135,7 +135,7 @@
   text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2)
 }
 .headingStyle-Apora{
-  font-size: 40px;
+  font-size: 30px;
   font-family: 'Pirulen';
   font-weight: bold;
   text-align: center;
@@ -527,7 +527,13 @@
     background-color: #e1e1e1;
   }
 }
-
+.common-nav-fix{
+  position:sticky;
+  top:0;
+  z-index:999;
+   box-shadow: 3px 3px 10px lightslategray;
+ 
+}
 
 button {
   margin: 20px;
@@ -555,7 +561,7 @@ button {
 .font-highlight-deconsol{
   font-size:30px;
   text-align:justify;
-  font-weight:400;
+  font-weight: 500;
    
 }
 
@@ -619,7 +625,7 @@ button {
 /* -------------industries serve css-------------------- */
 .IndustriesServe-heading {
   padding: 50px;
-  font-size: 36px; 
+  font-size: 30px; 
   /* font-family: 'pirulen'; */
   text-align: center; /* Center align the heading */
  color: black;
@@ -738,10 +744,13 @@ button {
     border-radius: 10px;
     padding: 5px;
   }
-
+.fix-dropdown-height{
+  margin-top: -7px;
+  font-size: 14px;
+}
   /* -------------------------------about us  */
   .aboutpage-starting {
-    height: 60vh;
+    height: 35vh;
     width: 100%;
     background-image: url('../Assets/Grey BG Dark.png');
     background-size: cover;
@@ -757,14 +766,10 @@ button {
   
   /* Gradient text */
   .gradient-text {
-    font-size: 48px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: 'pirulen';
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(to bottom, rgb(33, 11, 235) 0%, rgb(15, 202, 31) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    letter-spacing: 3px;
+    font-family: 'Good Times';
   }
   .aboutpage-subtitle{
     padding: 30px;
@@ -772,9 +777,139 @@ button {
     font-family: 'good times';
   }
   .gradient-text-h6 {
-   
+    font-size: 15px;
     font-family: 'Good Times';
     letter-spacing: 5px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
    
   }
+
+
+  /* --------------------------------------contact----------------------------- */
+  .contact-box {
+   padding: 30px;
+
+  }
+  
+  .contact-box img {
+    width: 100%;
+    height:30vh;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    border-radius: 40px; /* Applies the same border-radius as the box */
+  }
+  
+  .contact-box h1, .contact-box h2 {
+    position: absolute;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .contact-box h1 {
+    top: 20%;
+    left: 10%;
+    font-size: 3em;
+  }
+  
+  .contact-box h2 {
+    top: 40%;
+    left: 10%;
+    font-size: 1.5em;
+  }
+  
+  
+
+  
+
+.contact-form-wrapper {
+  padding: 10px 0;
+  background-image: url('../Assets/eco.jpg');
+  border-radius: 30px;
+  margin:30px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact-form {
+  padding: 30px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form .form-input,
+.form-text-area {
+  background-color: #f0f4f5;
+  height: 50px;
+  padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+  background-color: #f0f4f5;
+  height: auto;
+  padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+  color: #aeb4b9;
+  font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+  border-color: #f33fb0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+}
+
+.contact-form .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.contact-form .description {
+  color: #aeb4b9;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+  text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+  border: none;
+  border-radius: 4px;
+  position: relative;
+   
+ 
+    border: none;
+    background-color: #d30069;
+    
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+  background-color: #d30069;
+}

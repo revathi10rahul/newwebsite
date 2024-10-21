@@ -17,10 +17,12 @@ function NavbarCommon() {
     const handleAboutus=()=>{
         navigate('/aboutus')
     }
+    const handleContactus=()=>{
+      navigate('/contactus')
+    }
   return (
     <>
-    <div style={{position:"sticky",top:"0",zindex:"999", boxShadow: "3px 3px 10px lightslategray"
-}}>
+    <div className='common-nav-fix'>
     <Container fluid >
 <Navbar className="bg-body-tertiary justify-content-between">
      <img src='./Assets/ns black transparent.png' alt=""  style={{height:"auto",width:"8%"}}/>
@@ -45,10 +47,10 @@ function NavbarCommon() {
           <Nav className="me-auto">
             <Nav.Link href="/" onClick={handleHome}>Home</Nav.Link>
             <Nav.Link onClick={handleAboutus   }>About Us</Nav.Link>
-            <NavDropdown title="Products" id="nav-dropdown">
-              <NavDropdown.Item eventKey="4.1">Fulfillment Automation</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.2">Order Management System</NavDropdown.Item>
-              <NavDropdown.Item eventKey="4.3">Warehouse Management System</NavDropdown.Item>
+            <NavDropdown title="Products" id="nav-dropdown" >
+              <NavDropdown.Item className='fix-dropdown-height' eventKey="4.1">APORA Fulfillment Automation</NavDropdown.Item>
+              <NavDropdown.Item className='fix-dropdown-height' eventKey="4.2">PURVEY Order Management System</NavDropdown.Item>
+              <NavDropdown.Item className='fix-dropdown-height' eventKey="4.3">PURVEY Warehouse Management System</NavDropdown.Item>
               
             </NavDropdown>
          
@@ -76,7 +78,7 @@ function NavbarCommon() {
             </NavDropdown>
             <Nav.Link href="/" onClick={handleAboutus   }>Case Studies</Nav.Link>
             <Nav.Link href="/" onClick={handleAboutus   }>Blogs</Nav.Link>
-            <Nav.Link href="/" onClick={handleAboutus   }>Contact Us</Nav.Link>
+            <Nav.Link  onClick={handleContactus   }>Contact Us</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
